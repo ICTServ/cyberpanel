@@ -117,6 +117,8 @@ if grep -q -E "CentOS Linux 7|CentOS Linux 8" /etc/os-release ; then
   Server_OS="CentOS"
 elif grep -q -E "CloudLinux 7|CloudLinux 8" /etc/os-release ; then
   Server_OS="CloudLinux"
+elif grep -q "Rocky Linux" /etc/os-release ; then
+  Server_OS="RockyLinux"
 elif grep -q "AlmaLinux-8" /etc/os-release ; then
   Server_OS="AlmaLinux"
 elif grep -q -E "Ubuntu 18.04|Ubuntu 20.04|Ubuntu 20.10" /etc/os-release ; then
